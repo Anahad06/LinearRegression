@@ -3,7 +3,6 @@
 
 # In[80]:
 
-
 import numpy as np 
 import pandas as pd 
 import matplotlib.pyplot as plt 
@@ -11,13 +10,11 @@ import matplotlib.pyplot as plt
 
 # In[81]:
 
-
 df = pd.read_csv('headbrain.csv')
 df.head()
 
 
 # In[82]:
-
 
 # Collecting X & Y Values 
 X = df['Head Size(cm^3)'].values
@@ -58,17 +55,9 @@ plt.show()
 
 # In[100]:
 
-
 # Calculate The Accuracy of Model 
 from sklearn.metrics import mean_squared_error 
 
 # R Squared Method preformed by reg.score(X, y) using mean_squared_error
 accuracy = reg.score(X, y)
 print("The accuracy is " + str(round(accuracy * 100)) + '%')
-
-
-# In[ ]:
-
-
-
-
